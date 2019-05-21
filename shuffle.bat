@@ -4,7 +4,7 @@ set cwd=%~dp0
 if [%1]==[] goto install
 
 	:: otherwise, we're here to shuffle a playlist
-	node "%cwd%shuffle.js" "%1"
+	node "%cwd%shuffle.js" %1
 	goto :eof
 
 
